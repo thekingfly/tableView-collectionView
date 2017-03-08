@@ -1,0 +1,53 @@
+//
+//  PrefixHeader.pch
+//  商品二级联动
+//
+//  Created by 方飞 on 17/3/1.
+//  Copyright © 2017年 方飞demo. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#ifdef DEBUG
+#define XFGLog(...) NSLog(__VA_ARGS__)
+#else
+
+#define XFGLog(...)
+#endif
+#define XFGLogFunc NSLog(@"%s", __func__)
+
+#import "UIImage+Color.h"
+#import "MJExtension.h"
+#import "Masonry.h"
+#import "UIView+HGCorner.h"
+#import "MJRefresh.h"
+#import "UIView+Frame.h"
+
+#pragma mark - Color
+#define XFGRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define XFGGlobalBg RGBACOLOR(240, 240, 240, 1.0)
+#define XFGGlobalMain RGBACOLOR(40, 162, 137, 1)
+#define XFGLogoColor RGBACOLOR(239, 128, 12, 1)
+#define XFGStrongColor RGBACOLOR(255, 59, 59, 1)
+#define XFGWeakColor RGBACOLOR(187, 187, 187, 1)
+#define XFGGlobalFoutColor RGBACOLOR(49, 49, 51, 1.0)
+
+#pragma mark - Frame
+#define UISCREENWIDTH  [UIScreen mainScreen].bounds.size.width
+#define UISCREENHEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define is_Ipad [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad
+#define is_Iphone [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
+
+#define SizeScaleIPade (is_Iphone ? 1 : UISCREENWIDTH/375)
+#define SizeScale (is_Iphone ? 1 : 1.4)
+#define kFont(value) [UIFont systemFontOfSize:value * SizeScale]
+#define kSize(value) value * SizeScale
+#define kIpadOrIphoneSize(value) value * SizeScaleIPade
+
+#define kScreenSize(value) value * UISCREENWIDTH/375//按屏幕比例
+#define FF(weakSelf)                              __weak __typeof(&*self) weakSelf = self
+
+#endif /* PrefixHeader_pch */

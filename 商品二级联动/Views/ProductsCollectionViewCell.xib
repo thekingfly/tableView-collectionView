@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductsCollectionViewCell" id="gTV-IL-0wX" customClass="ProductsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="205"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="205"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="v2_placeholder_square" translatesAutoresizingMaskIntoConstraints="NO" id="Caz-hM-APY">
+                        <rect key="frame" x="3" y="3" width="128" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Caz-hM-APY" secondAttribute="height" multiplier="1:1" id="LJj-8U-vzE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="黄豆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmU-ax-0eA">
+                        <rect key="frame" x="8" y="137" width="118" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="1OR-et-gRz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500克" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zw-BK-mcs">
+                        <rect key="frame" x="8" y="155" width="118" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="uih-EK-6JT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 32.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXN-dD-tWi">
+                        <rect key="frame" x="8" y="181" width="90" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="m10-Wn-gCC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hk-ue-Rh8">
+                        <rect key="frame" x="106" y="177" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="4Hk-ue-Rh8" secondAttribute="height" multiplier="1:1" id="Oe5-GG-LiA"/>
+                            <constraint firstAttribute="width" constant="20" id="sko-es-LCk"/>
+                        </constraints>
+                        <state key="normal" image="+"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Caz-hM-APY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="3" id="2Hx-6q-DoB"/>
+                <constraint firstItem="5zw-BK-mcs" firstAttribute="top" secondItem="ZmU-ax-0eA" secondAttribute="bottom" constant="5" id="CzJ-fY-cg5"/>
+                <constraint firstItem="ZmU-ax-0eA" firstAttribute="top" secondItem="Caz-hM-APY" secondAttribute="bottom" constant="6" id="EuA-Ie-kVZ"/>
+                <constraint firstItem="Caz-hM-APY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="Gqt-FV-Fux"/>
+                <constraint firstAttribute="trailing" secondItem="4Hk-ue-Rh8" secondAttribute="trailing" constant="8" id="JIv-oz-1Jt"/>
+                <constraint firstItem="5zw-BK-mcs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Kum-Qf-P3I"/>
+                <constraint firstItem="4Hk-ue-Rh8" firstAttribute="leading" secondItem="PXN-dD-tWi" secondAttribute="trailing" constant="8" id="NK7-xV-Ab3"/>
+                <constraint firstAttribute="trailing" secondItem="ZmU-ax-0eA" secondAttribute="trailing" constant="8" id="S1h-CE-VGe"/>
+                <constraint firstItem="PXN-dD-tWi" firstAttribute="top" secondItem="5zw-BK-mcs" secondAttribute="bottom" constant="13" id="WUF-E1-Ubl"/>
+                <constraint firstItem="ZmU-ax-0eA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="cap-W1-pLy"/>
+                <constraint firstItem="PXN-dD-tWi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="fxL-DX-sJC"/>
+                <constraint firstAttribute="trailing" secondItem="5zw-BK-mcs" secondAttribute="trailing" constant="8" id="pl6-Yq-9lF"/>
+                <constraint firstAttribute="bottom" secondItem="4Hk-ue-Rh8" secondAttribute="bottom" constant="8" id="pma-kR-av9"/>
+                <constraint firstAttribute="trailing" secondItem="Caz-hM-APY" secondAttribute="trailing" constant="3" id="vTa-3n-KUT"/>
+            </constraints>
+            <size key="customSize" width="336" height="359"/>
+            <connections>
+                <outlet property="addCart" destination="4Hk-ue-Rh8" id="v0F-bs-LhI"/>
+                <outlet property="goodsImageView" destination="Caz-hM-APY" id="lJC-Fq-YkU"/>
+                <outlet property="nameLabel" destination="ZmU-ax-0eA" id="Mz0-da-yVv"/>
+                <outlet property="price" destination="PXN-dD-tWi" id="aSd-cr-BdZ"/>
+                <outlet property="specificsLabel" destination="5zw-BK-mcs" id="n1b-lW-WNH"/>
+            </connections>
+            <point key="canvasLocation" x="194" y="42.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="+" width="20" height="20"/>
+        <image name="v2_placeholder_square" width="200" height="200"/>
+    </resources>
+</document>
